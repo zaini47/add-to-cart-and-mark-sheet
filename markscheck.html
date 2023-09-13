@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="search" name="inputfeild" id="checker">
+    <button onclick="check()"> check </button>
+    
+
+
+    <script>
+        function check(){
+            const inputvalue = document.getElementById("checker");
+            checker(inputvalue.value);
+        
+        }
+        function checker(inputvalues){
+
+            console.log(inputvalues)
+            if(inputvalues >=80 && inputvalues <=100){
+                document.write("you have scolarship");
+            } 
+            else if (inputvalues >=60 && inputvalues <=80){
+                document.write("you have in 1st div");
+            }
+            else if (inputvalues >=45 && inputvalues <=50){
+                document.write("you have in 2st div");
+            }
+            else if (inputvalues >=33 && inputvalues <=45){
+                document.write("you have in 3st div");
+            } 
+            else if (inputvalues < 33){
+                document.write("you are fail");
+            }
+            else{
+                document.write("please enter valid number");
+            };
+        }
+    </script>
+</body>
+</html>
